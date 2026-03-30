@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-gray-600: #717fa6;
+	--color-purple-500: #766cf1;
+	--color-blue-950: #1f2e55;
+	--color-blue-700: #382ae1;
+	--color-blue-150: #d6e1ff;
+	--color-blue-100: #e0e8ff;
+	--color-blue-50: #f7f9ff;
+}
+
+html {
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100dvh;
+	background-color: var(--color-blue-100);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+svg {
+	width: 100%;
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	left: 0;
+}
+
+.main_card_container {
+	width: 100%;
+	max-width: 450px;
+	height: 100%;
+	max-height: 697px;
+	background-color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding-bottom: 3rem;
+	border-radius: 1.25rem;
+	box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.main_order_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 100%;
+	max-width: 354px;
+	gap: 2rem;
+}
+
+.order_details_container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.summary_container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+}
+
+.summary_container h1 {
+	font-size: 1.75rem;
+	font-weight: 900;
+	color: var(--color-blue-950);
+}
+
+.summary_container p {
+	color: var(--color-gray-600);
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.plan_summary_container {
+	height: 100%;
+	max-height: 98px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: var(--color-blue-50);
+	border-radius: 0.6875rem;
+}
+
+.plan_details {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.plan_text {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.musuicplan_container {
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+	padding: 1rem;
+	background-color: var(--color-blue-150);
+	border-radius: 1.5rem;
+}
+
+.plan_cost {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.plan_cost dt {
+	color: var(--color-blue-950);
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.plan_cost dd {
+	color: var(--color-gray-600);
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.change_plan_button {
+	font-family: 'Red Hat Display', sans-serif;
+	color: var(--color-blue-700);
+	border-width: 0px;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.change_plan_button:active {
+	color: var(--color-purple-500);
+}
+
+.payment_buttons_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	width: 100%;
+}
+
+.proceed_button {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1rem;
+	font-weight: 900;
+	color: var(--color-white);
+	height: 50px;
+	width: 100%;
+	background-color: var(--color-blue-700);
+	border-radius: 0.6875rem;
+	border-width: 0px;
+	box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+	cursor: pointer;
+}
+
+.proceed_button:active {
+	background-color: var(--color-purple-500);
+}
+
+.cancel_button {
+	color: var(--color-gray-600);
+	font-size: 1rem;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.cancel_button:active {
+	color: var(--color-blue-950);
+}
